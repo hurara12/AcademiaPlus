@@ -45,16 +45,16 @@ class Handler extends ExceptionHandler
     /**
      * Report or log an exception.
      */
-    public function report(Throwable $exception): void
-    {
-        ErrorLog::create([
+    // public function report(Throwable $exception): void
+    // {
+    //     ErrorLog::create([
 
-            'error_message' => $exception->getMessage(),
-            'line_number' => $exception->getLine(),
-            'function_name' => __FUNCTION__,
-            'file_name' => $exception->getFile(),
-        ]);
-    }
+    //         'error_message' => $exception->getMessage(),
+    //         'line_number' => $exception->getLine(),
+    //         'function_name' => __FUNCTION__,
+    //         'file_name' => $exception->getFile(),
+    //     ]);
+    // }
 
     /**
      * Render an exception into an HTTP response.
